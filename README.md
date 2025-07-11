@@ -5,6 +5,8 @@ An atmospheric web application that transports the user into a world of natural 
 ## Demo
 
 [https://reshatel.github.io/Meditative-Nature-Experience-React-App/](https://reshatel.github.io/Meditative-Nature-Experience-React-App/)
+![Screenshot](src/assets/preview.png)
+![Screenshot](src/assets/preview2.png)
 
 ## Features
 
