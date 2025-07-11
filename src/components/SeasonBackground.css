@@ -1,0 +1,23 @@
+.backgrounds {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.bg-img {
+  position: absolute;
+  inset: -5%;
+  width: 120%;
+  height: 120%;
+  object-fit: cover;
+  opacity: 0;
+  transform: none; 
+  transition: transform 0.3s ease-in-out, opacity 1.5s ease;
+  will-change: transform;
+}
+
+.bg-img.active {
+  opacity: 1;
+  z-index: -1;
+}

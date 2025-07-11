@@ -1,0 +1,50 @@
+.sound-button {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12); 
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(1px) saturate(100%);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.08), 0 0 4px rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform-style: preserve-3d;
+  outline: none;
+}
+
+.sound-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 18px rgba(255, 255, 255, 0.2), 0 0 6px rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+  outline: none;
+}
+
+.sound-button img {
+  width: 32px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.4));
+}
+.sound-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.25);
+}
+.sound-button:hover,
+.sound-button:focus,
+.sound-button:active {
+  outline: none;
+}
+.sound-button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.25);
+}
+
+button:hover {
+     border-color: rgba(255, 255, 255, 0.25); 
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 6px 18px rgba(255, 255, 255, 0.2), 0 0 6px rgba(255, 255, 255, 0.3);
+       transform: scale(1.05);
+
+}
