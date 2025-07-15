@@ -1,6 +1,7 @@
 .rain-video {
-  width: 100%;
-  height: 100%;
+   width: 100vw;
+  height: 100vh;
+  position: fixed;
   object-fit: cover;
   mix-blend-mode: screen;
   opacity: 0;
@@ -13,4 +14,9 @@
 
 .fade-out {
   opacity: 0;
+}
+@media (max-width: 768px) {
+  .rain-video {
+    height: 100dvh; /* підтримка на мобільних */
+  }
 }

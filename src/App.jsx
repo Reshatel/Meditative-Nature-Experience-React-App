@@ -25,9 +25,6 @@ import birdsSound from './assets/sounds/birds.mp3';
 import fogSound from './assets/sounds/fog.mp3';
 
 
-
-
-
 const App = () => {
   const [sounds, setSounds] = useState({
     rain: false,
@@ -176,7 +173,7 @@ const App = () => {
 
       <FogEffect visible={sounds.fog} />
       {(sounds.rain || rainFading) && (
-        <ReactHowler src={rainSound} playing={sounds.rain} loop volume={rainFading ? 0 : 0.5} />
+        <ReactHowler src={rainSound} playing={sounds.rain} loop volume={rainFading ? 0 : 0.9} />
       )}
       {sounds.birds && (
         <ReactHowler src={birdsSound} playing loop volume={0.5} />

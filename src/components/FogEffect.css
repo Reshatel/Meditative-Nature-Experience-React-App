@@ -1,8 +1,9 @@
 .fog-container {
   position: absolute;
   top: 0;
-  width: 100%;
-  height: 100%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   z-index: 4;
   pointer-events: none;
   overflow: hidden;
@@ -29,14 +30,41 @@
 }
 
 .fog-layer.hidden {
- visibility: hidden;
+  visibility: hidden;
   opacity: 0;
 }
 
-.fog-layer.fade-out {
-  animation: fadeOut 2s forwards;
-}
+@media (max-width: 768px) {
+  .fog-layer {
+    bottom: -40%;
+    left: -30%;
+    width: 200%;
+    height: 200%;
+    filter: blur(6px);
+  }
 
+  @keyframes fadeIn {
+    from {
+      bottom: -120%;
+      opacity: 0;
+    }
+    to {
+      bottom: -40%;
+      opacity: 0.4;
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      bottom: -40%;
+      opacity: 0.4;
+    }
+    to {
+      bottom: -120%;
+      opacity: 0;
+    }
+  }
+}
 
 
 @keyframes fadeIn {
